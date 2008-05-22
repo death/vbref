@@ -1,0 +1,91 @@
+#include <windows.h>
+#include "vbref.h"
+
+IDI_EXEC    ICON    "exec.ico"
+IDB_TOOLBAR BITMAP  "toolbar.bmp"
+
+MAIN MENU
+{
+    POPUP "&File"
+    {
+        MENUITEM "&Open ALF", IDM_OPENALF
+        MENUITEM "Open &VBR", IDM_OPENVBR
+        MENUITEM "&Save VBR", IDM_SAVEVBR
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit", IDM_EXIT
+    }
+
+    POPUP "&Search"
+    {
+        MENUITEM "&String Reference", IDM_STRREF
+        MENUITEM "&Text", IDM_TEXT
+        MENUITEM "&Import", IDM_IMPORT
+        MENUITEM "&Export", IDM_EXPORT
+    }
+
+    POPUP "&Goto"
+    {
+        MENUITEM "Go to &Entry Point", IDM_GOTOEP
+        MENUITEM "Go to &Code location", IDM_GOTOLOC
+    }
+
+    POPUP "&Help"
+    {
+        MENUITEM "&About", IDM_ABOUT
+    }
+}
+
+DLG_MAIN DIALOG 0, 0, 257, 246
+STYLE DS_3DLOOK | DS_CENTER | WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Visual Basic Disassembled String Reference Analyser"
+FONT 8, "Verdana"
+{
+}
+
+DLG_SEARCH DIALOG 0, 0, 180, 180
+STYLE DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Search"
+FONT 8, "Verdana"
+{
+    LISTBOX         IDC_LB, 6, 6, 168, 150, WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON      "&Find", IDC_FIND, 6, 160, 40, 14
+    PUSHBUTTON      "&Close", IDC_CLOSE, 49, 160, 40, 14
+}
+
+DLG_TEXT DIALOG 0, 0, 180, 40
+STYLE DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Search"
+FONT 8, "Verdana"
+{
+    EDITTEXT        IDT_TEXT, 5, 5, 168, 12, ES_AUTOHSCROLL
+    DEFPUSHBUTTON      "&Find", IDC_FIND, 86, 20, 40, 14
+    PUSHBUTTON      "&Close", IDC_CLOSE, 129, 20, 40, 14
+}
+
+DLG_GOTO DIALOG 263, 129, 191, 64
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Go to offset"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Please enter the offset you would like to go. This offset should be entered as a hexadecimal RVA (Relative Virtual Address).",
+                    -1, 6, 6, 179, 27
+    LTEXT           "For example: 401234", -1, 6, 33, 179, 12
+    EDITTEXT        IDT_OFFSET, 26, 46, 64, 12, ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "RVA:", -1, 6, 46, 20, 12
+    DEFPUSHBUTTON   "&Go to", IDC_GOTO, 120, 44, 65, 14
+END
+
+DLG_ABOUT DIALOG 98, 92, 201, 96
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE |
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About VBRef"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "Okay", IDOK, 155, 60, 40, 14
+    GROUPBOX        "", -1, 6, 6, 189, 40
+    CTEXT           "Visual Basic Disassembled String Reference Analyser",
+                    -1, 9, 17, 178, 12
+    CTEXT           "Version 2.1 (c)2000 by DEATH", -1, 9, 29, 178, 12
+    LTEXT           "Visit us at EFnet's #execution", -1, 25, 59, 108, 12
+    ICON            "AboutIcon", IDC_ABOUT, 4, 55, 18, 20
+END

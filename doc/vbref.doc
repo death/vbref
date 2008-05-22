@@ -1,0 +1,145 @@
+          Visual Basic Disassembled String Reference Analyser (VBREF)
+                                  Version 2.1
+                             by DEATH of Execution
+                                   1999-2000
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+
+Contents
+---------
+1.      - Overview
+2.      - Disclaimer
+3.      - What to do?
+4.      - Technical notes
+5.      - Contacting the author
+6.      - The future of VBRef
+7.      - History of VBRef
+8.      - Greetings and Thank you's
+
+
+1. Overview
+------------
+Alot of times when you crack Visual Basic programmes, you want to
+disassemble them and search up positions by the String References, but
+Visual Basic uses Wide Char format, so W32Dasm can't process those strings.
+What can you do in order to view those strings? Use vbref :)
+
+
+2. Disclaimer
+--------------
+I'm not responsible for anything ;)
+
+
+3. What to do?
+---------------
+If you don't know how to use VBRef, you're probably won't be able to crack
+the programme, since it's very simple.
+
+                  ..(And I'm too lazy for writing help <g>)..
+
+
+4. Technical notes
+-------------------
+Some time has passed because I saw duelist's better solution to VB strings.
+I wanted to add wpj file format support, but when none of you lazy bastards
+bothered to mail me about info, and as I am a lazy bastard too, it was
+easier and more fun to write a GUI for VBRef, which now has features
+similiar to W32Dasm. Well.. Have fun with it ;)
+
+By the way, I coded it in C. I dislike languages like Delphi or Visual
+Basic, they seem to be overbloated, slow, and sometimes inflexible. C
+however is a very tight, fast and flexible language compared to other high
+level languages.
+
+
+5. Contacting the author
+-------------------------
+The author is DEATH of Execution group (a coding group). You may contact me
+if you have suggesstions, bug reports, or any other thing that might
+interest me. Contact me via:
+
+    Email: ab4ds@hotmail.com
+    Web: http://deathlair.cjb.net/
+    IRC: EFnet's #cracking4newbies, #execution my nickname is AB4DS.
+    ICQ: 25480477 (I hardly use it though)
+
+
+6. The future of VBRef
+-----------------------
+    -   I don't know, you suggest?
+
+
+7. History of VBRef
+--------------------
+1.0       - Initial release
+1.1 (i)   - Documentation fix
+          - Added line space in string ref, so it will look exactly like
+            W32Dasm's generated file
+          - Very brutal speed optimizing :)
+          - Overwrite option
+          - Bug fix: If string after String Reference is smaller than 9
+            characters, the String Reference will appear again.
+2.0       - GUI
+          - W32Dasm alike features.
+2.1       - Silly me.. Now VBRef will import Ordinal names correctly.
+          - GUI: Added Status bar and Tool bar.
+          - VBRef now restores its size and position.
+new       - Speeded up disassembly reconstruction.
+          - Better error handling.
+          - Shows percentage for line indexing too..
+
+(i) Means internal version.
+
+
+8. Greetings and Thank you's
+-----------------------------
+First of all, thanks NeuRaL_NoiSE for your piece of code of Physical Address
+to Virtual Address, without this I don't think I'd pull out this tool
+because of laziness..
+
+Now, Greetz go to:
+    All my groups - EXEC/dF/iSD/pGC - You own.
+
+    ACiD BuRN       -   The almighty VB cracker.
+    XMen            -   Keep coding dude, we need to finish CP :)
+    The Ghost       -   Answer me when I talk to you.. :p
+    Icecream        -   Ook = Also :)
+    cTT             -   Long time no see :/
+    DnNuke          -   Continue great graphics..
+    noos            -   nnnnoooooooooooooooosssssss!!
+    Fireworx        -   m0o fw m0o :)
+    CoRN2           -   What's up with cornsoup?
+    fresh           -   I heard you got dreamcast.. grr :)
+    CarNaGe0        -   carnage0 ;)
+    Borna Janes     -   VIPer ownz.
+    Eternal Bliss   -   VIPer ownz.. :)
+    Senator         -   Now gimme leech on other sites ;)
+    Technich        -   What's up with dFPORN?
+    duelist         -   What about a new SDRPatch to beat VBRef 2? :)
+    R!SC            -   cDilla crack is nice..
+    elmopio         -   iNSiDE FOREVER :)
+    Night Hawk      -   meep!
+    sortof          -   What about the demo?
+    FuZZion         -   Get TEX working..
+    Kathras         -   Continue making those nice tutorials.
+    Koka            -   Where are you?
+    xT4             -   SOA back?
+    night_mastah    -   UCF is nice..
+    rryan           -   Contact me, I want more gfx :)
+    nevah           -   Yo sup with NSC..
+    ByteBurn        -   Pay me to get IRCop is a nice way to make $
+    Predator        -   Give me some Phrozen Predator with fries..
+    CodeZero        -   Leeto :)
+    DEZM            -   Didn't forget you this time..
+    BMonkey         -   Eek! Ook! Ook Eek?
+    Accz            -   Keep practising on keygenning, you'll be the best..
+    Dawai           -   I am making a Telescope as a school project :)
+    Quantico        -   Good keygenning skills ye got there ;)
+    lithium2        -   Jail sucks. Police women own though.
+    Marton          -   b0o and you didn't have to sex0r me even!!
+
+    And ALL other friends I got, if you're not in that list, tell me you
+    want to be.. (Some friends will have to pay some additional price, such
+    as sex0ring :)..
+
+                                                        C'ya, DEATH
+
